@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="主要功能">
+<meta itemprop="description" content="1. 批量代收 1.1 适用场景 一次性对多个银行账户发起的收款，资金T&#43;1结算到收款方账户中  1.2 场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量代收到国家电网指定的银行账户中  2. 实时代收 2.1 适用场景 对单个账户进行实时代收，资金实时结算到收款方账户中  2.2 场景案例 如电费代收，发起一次报文请求，对单个用电客户银行账户进行实时代收到国家电网指定的银行账户中  3. 批量实时代收 3.1适用场景 一次性对多个银行账户发起的收款，资金实时结算到收款方账户中，用于时效性较高的批量代收场景  3.2场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量实时代收到国家电网指定的银行账户中  4. 批量代付 4.1 适用场景 一次性从付款方账户付款到多个收款方，资金T&#43;1结算到收款方账户中  4.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  5. 批量实时代付 5.1 适用场景 一次性从付款方账户付款到多个收款方，资金实时结算到收款方账户中，用于时效性较高的批量实时付款场景  5.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  6. 实时代付 6.1 适用场景 对单个账户进行实时代付，资金实时结算到收款方账户中，用于时效性较高的实时付款场景  6.2 场景案例 如养老保险金发放，对单个收款账户发放养老保险金  "><meta itemprop="datePublished" content="2016-01-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2016-01-01T00:00:00+00:00" />
+<meta itemprop="wordCount" content="46">
+<meta itemprop="keywords" content="blog," /><meta property="og:title" content="主要功能" />
+<meta property="og:description" content="1. 批量代收 1.1 适用场景 一次性对多个银行账户发起的收款，资金T&#43;1结算到收款方账户中  1.2 场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量代收到国家电网指定的银行账户中  2. 实时代收 2.1 适用场景 对单个账户进行实时代收，资金实时结算到收款方账户中  2.2 场景案例 如电费代收，发起一次报文请求，对单个用电客户银行账户进行实时代收到国家电网指定的银行账户中  3. 批量实时代收 3.1适用场景 一次性对多个银行账户发起的收款，资金实时结算到收款方账户中，用于时效性较高的批量代收场景  3.2场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量实时代收到国家电网指定的银行账户中  4. 批量代付 4.1 适用场景 一次性从付款方账户付款到多个收款方，资金T&#43;1结算到收款方账户中  4.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  5. 批量实时代付 5.1 适用场景 一次性从付款方账户付款到多个收款方，资金实时结算到收款方账户中，用于时效性较高的批量实时付款场景  5.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  6. 实时代付 6.1 适用场景 对单个账户进行实时代付，资金实时结算到收款方账户中，用于时效性较高的实时付款场景  6.2 场景案例 如养老保险金发放，对单个收款账户发放养老保险金  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.partners.run/doc/doc/" /><meta property="article:section" content="doc" />
+<meta property="article:published_time" content="2016-01-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-01-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="主要功能"/>
+<meta name="twitter:description" content="1. 批量代收 1.1 适用场景 一次性对多个银行账户发起的收款，资金T&#43;1结算到收款方账户中  1.2 场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量代收到国家电网指定的银行账户中  2. 实时代收 2.1 适用场景 对单个账户进行实时代收，资金实时结算到收款方账户中  2.2 场景案例 如电费代收，发起一次报文请求，对单个用电客户银行账户进行实时代收到国家电网指定的银行账户中  3. 批量实时代收 3.1适用场景 一次性对多个银行账户发起的收款，资金实时结算到收款方账户中，用于时效性较高的批量代收场景  3.2场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量实时代收到国家电网指定的银行账户中  4. 批量代付 4.1 适用场景 一次性从付款方账户付款到多个收款方，资金T&#43;1结算到收款方账户中  4.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  5. 批量实时代付 5.1 适用场景 一次性从付款方账户付款到多个收款方，资金实时结算到收款方账户中，用于时效性较高的批量实时付款场景  5.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  6. 实时代付 6.1 适用场景 对单个账户进行实时代付，资金实时结算到收款方账户中，用于时效性较高的实时付款场景  6.2 场景案例 如养老保险金发放，对单个收款账户发放养老保险金  "/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>主要功能</title>
+	<link rel="stylesheet" href="https://www.partners.run/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://www.partners.run">派能科技</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://www.partners.run/post/jianjie">公司简介</a>
+				<a href="https://www.partners.run/wufu/duizhang">产品介绍</a>
+				<a href="https://www.partners.run/doc/doc">产品模块</a>
+				<a href="https://www.partners.run/go/jiaru">加入我们</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://www.partners.run/post/jianjie">公司简介</a></li>
+			<li><a href="https://www.partners.run/wufu/duizhang">产品介绍</a></li>
+			<li><a href="https://www.partners.run/doc/doc">产品模块</a></li>
+			<li><a href="https://www.partners.run/go/jiaru">加入我们</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>主要功能</h1>
+		<div class="content">
+			<h2 id="1-批量代收">1. 批量代收<a href="#1-批量代收" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h4 id="11-适用场景">1.1 适用场景<a href="#11-适用场景" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>一次性对多个银行账户发起的收款，资金T+1结算到收款方账户中
+</code></pre>
+<h4 id="12-场景案例">1.2 场景案例<a href="#12-场景案例" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量代收到国家电网指定的银行账户中
+</code></pre>
+<h2 id="2-实时代收">2. 实时代收<a href="#2-实时代收" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h4 id="21-适用场景">2.1 适用场景<a href="#21-适用场景" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>对单个账户进行实时代收，资金实时结算到收款方账户中
+</code></pre>
+<h4 id="22-场景案例">2.2 场景案例<a href="#22-场景案例" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>如电费代收，发起一次报文请求，对单个用电客户银行账户进行实时代收到国家电网指定的银行账户中
+</code></pre>
+<h2 id="3-批量实时代收">3. 批量实时代收<a href="#3-批量实时代收" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h4 id="31适用场景">3.1适用场景<a href="#31适用场景" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>一次性对多个银行账户发起的收款，资金实时结算到收款方账户中，用于时效性较高的批量代收场景
+</code></pre>
+<h4 id="32场景案例">3.2场景案例<a href="#32场景案例" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量实时代收到国家电网指定的银行账户中
+</code></pre>
+<h2 id="4-批量代付">4. 批量代付<a href="#4-批量代付" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h4 id="41-适用场景">4.1 适用场景<a href="#41-适用场景" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>一次性从付款方账户付款到多个收款方，资金T+1结算到收款方账户中
+</code></pre>
+<h4 id="42-场景案例">4.2 场景案例<a href="#42-场景案例" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付
+</code></pre>
+<h2 id="5-批量实时代付">5. 批量实时代付<a href="#5-批量实时代付" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h4 id="51-适用场景">5.1 适用场景<a href="#51-适用场景" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>一次性从付款方账户付款到多个收款方，资金实时结算到收款方账户中，用于时效性较高的批量实时付款场景
+</code></pre>
+<h4 id="52-场景案例">5.2 场景案例<a href="#52-场景案例" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付
+</code></pre>
+<h2 id="6-实时代付">6. 实时代付<a href="#6-实时代付" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h4 id="61-适用场景">6.1 适用场景<a href="#61-适用场景" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>对单个账户进行实时代付，资金实时结算到收款方账户中，用于时效性较高的实时付款场景
+</code></pre>
+<h4 id="62-场景案例">6.2 场景案例<a href="#62-场景案例" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>如养老保险金发放，对单个收款账户发放养老保险金
+</code></pre>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2022 <a href="https://www.partners.run">派能科技</a> &#183;江西省派能科技有限责任公司|版权所有 </a></p>
+		
+	</footer>
+
+
+
+	<script src="https://www.partners.run/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

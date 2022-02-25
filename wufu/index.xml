@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wufus on 派能科技</title>
+    <link>https://www.partners.run/wufu/</link>
+    <description>Recent content in Wufus on 派能科技</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 23 Feb 2022 17:13:30 +0800</lastBuildDate><atom:link href="https://www.partners.run/wufu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>产品介绍</title>
+      <link>https://www.partners.run/wufu/duizhang/</link>
+      <pubDate>Wed, 23 Feb 2022 17:13:30 +0800</pubDate>
+      
+      <guid>https://www.partners.run/wufu/duizhang/</guid>
+      <description>代收  1.说明  指综合业务服务平台根据入网机构委托，从多个已签约缴费人银行账户，收取指定金额和费用类型的款项给入网机构的业务   2.适用对象  适用于公缴单位
+  3.支持银行  
+  4.限额  100万人民币
+  5.响应时间  T0级别响应
+  6.资金链路  付款方&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt;收款方
+   代付  1.说明  指综合业务服务平台根据入网机构委托，从多个已签约缴费人银行账户，发放指定金额和费用类型的款项给入网机构的业务   2.适用对象  适用于公缴单位
+  3.支持银行  
+  4.限额  100万人民币
+  5.响应时间  T0级别响应
+  6.资金链路  收款方&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt;付款方
+   对账  1.对账系统    2.</description>
+    </item>
+    
+  </channel>
+</rss>

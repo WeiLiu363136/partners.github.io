@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>派能科技</title>
+    <link>https://www.partners.run/</link>
+    <description>Recent content on 派能科技</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 23 Feb 2022 17:13:30 +0800</lastBuildDate><atom:link href="https://www.partners.run/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>产品介绍</title>
+      <link>https://www.partners.run/wufu/duizhang/</link>
+      <pubDate>Wed, 23 Feb 2022 17:13:30 +0800</pubDate>
+      
+      <guid>https://www.partners.run/wufu/duizhang/</guid>
+      <description>代收  1.说明  指综合业务服务平台根据入网机构委托，从多个已签约缴费人银行账户，收取指定金额和费用类型的款项给入网机构的业务   2.适用对象  适用于公缴单位
+  3.支持银行  
+  4.限额  100万人民币
+  5.响应时间  T0级别响应
+  6.资金链路  付款方&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt;收款方
+   代付  1.说明  指综合业务服务平台根据入网机构委托，从多个已签约缴费人银行账户，发放指定金额和费用类型的款项给入网机构的业务   2.适用对象  适用于公缴单位
+  3.支持银行  
+  4.限额  100万人民币
+  5.响应时间  T0级别响应
+  6.资金链路  收款方&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt;付款方
+   对账  1.对账系统    2.</description>
+    </item>
+    
+    <item>
+      <title>加入我们</title>
+      <link>https://www.partners.run/go/jiaru/</link>
+      <pubDate>Wed, 23 Feb 2022 17:13:30 +0800</pubDate>
+      
+      <guid>https://www.partners.run/go/jiaru/</guid>
+      <description>青春是挽不回的水，转眼消失在指尖，用力的浪费，再用力的后悔，不要沉迷过去，接受新的生活，新的自己，新的团队。 在这里，你能收获的不仅仅是高薪，还有技能，知识和家人！ 收拾行李，寻找新的资金，加入我们！就是现在！ </description>
+    </item>
+    
+    <item>
+      <title>江西派能科技有限责任公司（简称“派能公司”）</title>
+      <link>https://www.partners.run/post/jianjie/</link>
+      <pubDate>Wed, 23 Feb 2022 17:13:30 +0800</pubDate>
+      
+      <guid>https://www.partners.run/post/jianjie/</guid>
+      <description>派能公司以支付改革理念推广为基础，提供金融科技服务为主要路径，为各家大型机构及监管机构提供服务，开发运作项目涉及金融、支付等行业 派能公司的核心成员2015年参与人民银行第二代支付系统设计开发，2016年开发了广州汇卡商务有限公司（第三方支付公司）保理业务系统构架，当前全面进驻人民银行南昌中心支行结算中心，升级维护集中代收付系统，拥有一支一流的研发团队、系统风控团队、业务推广团队、品牌建设团队，具备大区域内系统构架能力、个性化设计能力；地域产品推广能力；拥有多领域集成维护系统开发维护能力，能够为每个客户提供优质及周到的服务及团队保障。 </description>
+    </item>
+    
+    <item>
+      <title>主要功能</title>
+      <link>https://www.partners.run/doc/doc/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.partners.run/doc/doc/</guid>
+      <description>1. 批量代收 1.1 适用场景 一次性对多个银行账户发起的收款，资金T+1结算到收款方账户中  1.2 场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量代收到国家电网指定的银行账户中  2. 实时代收 2.1 适用场景 对单个账户进行实时代收，资金实时结算到收款方账户中  2.2 场景案例 如电费代收，发起一次报文请求，对单个用电客户银行账户进行实时代收到国家电网指定的银行账户中  3. 批量实时代收 3.1适用场景 一次性对多个银行账户发起的收款，资金实时结算到收款方账户中，用于时效性较高的批量代收场景  3.2场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量实时代收到国家电网指定的银行账户中  4. 批量代付 4.1 适用场景 一次性从付款方账户付款到多个收款方，资金T+1结算到收款方账户中  4.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  5. 批量实时代付 5.1 适用场景 一次性从付款方账户付款到多个收款方，资金实时结算到收款方账户中，用于时效性较高的批量实时付款场景  5.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  6. 实时代付 6.1 适用场景 对单个账户进行实时代付，资金实时结算到收款方账户中，用于时效性较高的实时付款场景  6.2 场景案例 如养老保险金发放，对单个收款账户发放养老保险金  </description>
+    </item>
+    
+  </channel>
+</rss>
