@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on 派能科技</title>
+    <link>https://www.partners.run/tags/blog/</link>
+    <description>Recent content in blog on 派能科技</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.partners.run/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>主要功能</title>
+      <link>https://www.partners.run/doc/doc/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.partners.run/doc/doc/</guid>
+      <description>1. 批量代收 1.1 适用场景 一次性对多个银行账户发起的收款，资金T+1结算到收款方账户中  1.2 场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量代收到国家电网指定的银行账户中  2. 实时代收 2.1 适用场景 对单个账户进行实时代收，资金实时结算到收款方账户中  2.2 场景案例 如电费代收，发起一次报文请求，对单个用电客户银行账户进行实时代收到国家电网指定的银行账户中  3. 批量实时代收 3.1适用场景 一次性对多个银行账户发起的收款，资金实时结算到收款方账户中，用于时效性较高的批量代收场景  3.2场景案例 如电费代收，发起一次报文请求，一次性对若干个用电客户进行批量实时代收到国家电网指定的银行账户中  4. 批量代付 4.1 适用场景 一次性从付款方账户付款到多个收款方，资金T+1结算到收款方账户中  4.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  5. 批量实时代付 5.1 适用场景 一次性从付款方账户付款到多个收款方，资金实时结算到收款方账户中，用于时效性较高的批量实时付款场景  5.2 场景案例 如养老保险金发放，发起一次报文请求，一次性对若干个社保账户进行批量代付  6. 实时代付 6.1 适用场景 对单个账户进行实时代付，资金实时结算到收款方账户中，用于时效性较高的实时付款场景  6.2 场景案例 如养老保险金发放，对单个收款账户发放养老保险金  </description>
+    </item>
+    
+  </channel>
+</rss>
